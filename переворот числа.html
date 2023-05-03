@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>переворот числа</head>
+<script>
+
+	function reversNum(num, begin = 0){
+   	 if (!num) return begin;
+    	begin =  begin * 10  + num % 10;
+    return reversNum(Math.floor( num / 10), begin);
+	}
+	console.log(reversNum(12345));
+</script>
+</html>
